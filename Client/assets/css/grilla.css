@@ -1,70 +1,66 @@
-
 /*Desktop*/
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "FondoAzul FondoAzul FondoBlanco FondoBlanco"
+    "FondoAzul FondoAzul FondoBlanco FondoBlanco"
+    "FondoAzul FondoAzul FondoBlanco FondoBlanco";
+}
+
+.FondoAzul {
+  grid-area: FondoAzul;
+}
+
+.FondoBlanco {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Titulo"
+    "Contacto"
+    "Logo";
+  grid-area: FondoBlanco;
+}
+
+.Titulo {
+  grid-area: Titulo;
+}
+
+.Contacto {
+  grid-area: Contacto;
+}
+
+.Logo {
+  grid-area: Logo;
+}
+
+@media (max-width: 1025px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 16px;
     grid-template-areas:
-      "FondoAzul FondoAzul FondoBlanco FondoBlanco"
-      "FondoAzul FondoAzul FondoBlanco FondoBlanco"
-      "FondoAzul FondoAzul FondoBlanco FondoBlanco";
+      "FondoAzul FondoAzul FondoAzul FondoAzul"
+      "FondoAzul FondoAzul FondoAzul FondoAzul"
+      "FondoBlanco FondoBlanco FondoBlanco FondoBlanco"
+      "FondoBlanco FondoBlanco FondoBlanco FondoBlanco";
   }
-  
-  .FondoAzul { grid-area: FondoAzul; }
-  
+
   .FondoBlanco {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 91px 109px 114px;
     gap: 0px 0px;
     grid-template-areas:
-      "Titulo"
-      "Contacto"
-      "Logo";
+      "Titulo Titulo Titulo"
+      "Contacto Contacto Contacto"
+      "Logo Logo Logo";
     grid-area: FondoBlanco;
   }
-  
-  .Titulo { grid-area: Titulo; }
-  
-  .Contacto { grid-area: Contacto; }
-  
-  .Logo { grid-area: Logo; }
-
-  
-  @media (max-width: 1025px) {
- 
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 16px;
-        grid-template-areas:
-          "FondoAzul FondoAzul FondoAzul FondoAzul"
-          "FondoAzul FondoAzul FondoAzul FondoAzul"
-          "FondoBlanco FondoBlanco FondoBlanco FondoBlanco"
-          "FondoBlanco FondoBlanco FondoBlanco FondoBlanco";
-      }
-      
-      
-      
-      .FondoBlanco {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 91px 109px 114px;
-        gap: 0px 0px;
-        grid-template-areas:
-          "Titulo Titulo Titulo"
-          "Contacto Contacto Contacto"
-          "Logo Logo Logo";
-        grid-area: FondoBlanco;
-      }
-      
-     
-    
-    }
-
-
-  
+}
