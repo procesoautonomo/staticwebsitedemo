@@ -12,6 +12,8 @@ body {
 .FondoAzul {
   background: #0c1425;
   height: 382px;
+  animation-name: Mascara;
+  animation-duration: 750ms;
 }
 
 .Mascara {
@@ -25,6 +27,8 @@ body {
   visibility: collapse;
   height: 0px;
   width: 0px;
+  animation-name: Mascara;
+  animation-duration: 750ms;
 }
 
 .Titulo {
