@@ -3,41 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>Autónomo. Proceso independiente</title>
+    <title>Autónomo Proceso independiente</title>
 
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/grilla.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body class="grid-container">
-    <div class="FondoAzul">
-      <img class="Mascara" src="assets/img/FondoMascaraAutonomo(sinfondo) 1.png" />
-      <img class="FondoLetraAzul" src="assets/img/FondoLetraVector.png" />
-    </div>
-    <div class="FondoBlanco">
-      <div class="Titulo">
-        <h1 class="Titulo2">Entorno en construcción</h1>
-      </div>
-      <div class="Contacto">
-        <div class="Contacto2">
-          <b>Contacto:</b>
-          <br />
-        </div>
-        <div class="iconos">
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=543518089826&text=Hola.%20Quiero%20hacer%20una%20consulta.">
-            <img src="assets/img/whatsapp.svg" />
-          </a>
-          <a target="_blank" href="https://www.instagram.com/autonomo.b2b/">
-            <img src="assets/img/instagram.svg" />
-          </a>
-          <a target="_blank" href="mailto:administracion@procesoautonomo.com">
-            <img src="assets/img/email.svg" />
+  <body>
+    <div class="cantainer">
+      <div class="wrapper">
+        <div class="modulo flex">
+          <a class="btn flex" href="#">
+            <img src="assets/img/logo_sm.svg" alt="logo" />
           </a>
         </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper portfolio">
+            <div class="swiper-slide swiper-slide-w">
+              <a class="modulo swipper-element" href="#">
+                <img src="assets/img/img1_sm.png" alt="desarrollo" />
+                <div class="element-text">Desarrollo</div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-w">
+              <a class="modulo swipper-element" href="#">
+                <img src="assets/img/img2_sm.png" alt="Soporte" />
+                <div class="element-text">Soporte</div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-w">
+              <a class="modulo swipper-element" href="#">
+                <img src="assets/img/img3_sm.png" alt="UX/UI" />
+                <div class="element-text">UX/UI</div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide-w">
+              <a class="modulo swipper-element" href="#">
+                <img src="assets/img/img4_sm.png" alt="Branding" />
+                <div class="element-text">Branding</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modulo flex">
+          <a class="btn flex" href="#">
+            <label for="">Servicios</label>
+          </a>
+        </div>
+
+        <div class="row-btn">
+          <div class="col-btn modulo flex">
+            <a class="btn flex" href="#">
+              <label for="">Tecnologia</label>
+            </a>
+          </div>
+          <div class="col-btn modulo flex">
+            <a class="btn flex" href="#">
+              <label for="">Nosotros</label>
+            </a>
+          </div>
+          <div class="col-btn modulo flex">
+            <a class="btn flex" href="#">
+              <label for="">Clientes</label>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-btn2 modulo flex">
+          <a class="btn flex" href="#">
+            <label for="">Blog</label>
+          </a>
+        </div>
       </div>
-      <img class="Logo" src="assets/img/Logo autonomo.svg" />
     </div>
 
+    <div class="navbar"></div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/index.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
